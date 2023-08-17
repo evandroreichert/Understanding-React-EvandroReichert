@@ -24,5 +24,5 @@
 
 Outros comandos importantes:
 
-git checkout  
-git stash
+    git checkout "nova branch"   
+    git stash 
