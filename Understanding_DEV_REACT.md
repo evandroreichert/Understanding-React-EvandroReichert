@@ -22,7 +22,31 @@
 
 ---
 
-Outros comandos importantes:
+<br>
 
-    git checkout "nova branch"   
-    git stash 
+# Outros comandos importantes:
+
+    
+## git log  
+Visualiza os pontos na linha do tempo (commits)
+
+## git show     
+ Apresenta determinando ponto na história
+
+## git branch   
+ Gerenciar novas linhas do tempo
+## git checkout 
+ Manipula as linhas do tempo
+## git reset    
+ Voltar para um ponto na linha do tempo
+## git merge    
+ Unir as linhas do tempo
+
+## git fork     
+ Criar uma bifurcação de um repositório   
+*Como usar:* https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo
+
+
+## git stash    
+ Salvar trabalho no estado atual para continuar com outra tarefa, e voltar depois  
+*Documentação:* https://git-scm.com/docs/git-stash
