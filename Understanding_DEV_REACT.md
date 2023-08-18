@@ -50,3 +50,6 @@ Visualiza os pontos na linha do tempo (commits)
 ## git stash    
  Salvar trabalho no estado atual para continuar com outra tarefa, e voltar depois  
 *Documentação:* https://git-scm.com/docs/git-stash
+
+Material complementar | Git e Github  
+https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA
