@@ -16,7 +16,7 @@
 ## *	 git status // ver status atual do git (se precisa 	commitar algo ou não)
 
 
-### O PROCESSO É
+### O PROCESSO É (PARA TRABALHO INDIVIDUAL)
 
     clone ➜ add ➜ commit ➜ push
 
