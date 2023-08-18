@@ -88,13 +88,10 @@ HTML (HyperText Markup Language) é a linguagem de marcação padrão utilizada 
 
 HTML é usado para definir a estrutura de uma página da web. Ele determina como o conteúdo é organizado e apresentado aos visitantes. Com o uso de tags e elementos, os desenvolvedores podem criar páginas com texto formatado, imagens, links e outros elementos que constituem a experiência de navegação na web.
 
-## Um pouco da história do HTML
-
-HTML foi criado por Tim Berners-Lee em 1990. A primeira versão, HTML 1.0, era bastante simples e focada em estruturar documentos para compartilhamento online. Ao longo dos anos, várias versões do HTML foram desenvolvidas, cada uma trazendo novos recursos e melhorias. A transição mais significativa foi para HTML5, que trouxe uma gama mais ampla de recursos, incluindo suporte a multimídia e elementos semânticos.
 
 ---
 
-# HTML - Introdução (Elementos, Tags, Atributos)
+# Elementos, Tags e Atributos
 
 ## Elementos em HTML
 
@@ -110,7 +107,7 @@ As tags HTML podem ter atributos que fornecem informações adicionais sobre o e
 
 ---
 
-# HTML - Introdução (Estrutura de um arquivo HTML, Comentários, Tags de Cabeçalho)
+# Estrutura de um arquivo HTML, Comentários e Tags de Cabeçalho
 
 ## Estrutura de um arquivo HTML
 
@@ -119,6 +116,17 @@ Um arquivo HTML começa com uma declaração `<!DOCTYPE>` que define a versão d
 ## Comentários em HTML
 
 Comentários são usados para adicionar notas ou explicações no código HTML. Eles não são exibidos na página do navegador e são escritos entre `<!--` e `-->`.
+
+
+/* Isto é um comentário */
+
+/*
+
+Isto é um comentário
+
+que pode ter várias linhas
+
+*/
 
 ## Tags de Cabeçalho HTML
 
