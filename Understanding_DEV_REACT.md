@@ -118,16 +118,6 @@ Um arquivo HTML começa com uma declaração `<!DOCTYPE>` que define a versão d
 Comentários são usados para adicionar notas ou explicações no código HTML. Eles não são exibidos na página do navegador e são escritos entre `<!--` e `-->`.
 
 
-/* Isto é um comentário */
-
-/*
-
-Isto é um comentário
-
-que pode ter várias linhas
-
-*/
-
 ## Tags de Cabeçalho HTML
 
 As tags de cabeçalho, que ficam na seção `<head>` do documento, fornecem informações sobre a página, como título, codificação de caracteres e links para folhas de estilo.
