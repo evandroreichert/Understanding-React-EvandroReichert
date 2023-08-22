@@ -157,7 +157,11 @@ Esses elementos não têm um significado semântico intrínseco, mas desempenham
 
 # HTML - Principais Tags 
 
+![html](/assets/1596625644452.jpeg "principais tags")
+
 ## Principais Tags do HTML
+
+
 
 - `<h1>` a `<h6>`: Tags de título, usadas para criar cabeçalhos de diferentes níveis.
 - `<p>`: Tag de parágrafo, usada para inserir texto.
