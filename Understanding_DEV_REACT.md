@@ -128,7 +128,7 @@ As tags de cabeçalho, que ficam na seção `<head>` do documento, fornecem info
 
 # HTML - Tags semânticas
 
-## Tags semânticas em HTML
+## Tags semânticas em HTML - Resumo
 
 As tags semânticas ajudam a estruturar o conteúdo de uma maneira significativa para os mecanismos de busca e para a acessibilidade. Algumas das tags semânticas mais comuns são:
 
@@ -141,6 +141,88 @@ As tags semânticas ajudam a estruturar o conteúdo de uma maneira significativa
 - `<aside>`: Define um conteúdo relacionado ou auxiliar.
 
 ---
+
+## Exemplos de Tags semânticas em HTML
+
+
+
+ `<header>`: Define o cabeçalho da página ou de uma seção. Geralmente contém logotipos, títulos e elementos de navegação.
+  ```html
+  <header>
+    <h1>Meu Site</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+  ```
+
+  `<main>`: Define o conteúdo principal da página. Deve conter o conteúdo central da página, excluindo cabeçalhos, rodapés e barras laterais.
+
+```html
+<main>
+  <h2>Artigo Principal</h2>
+  <p>Este é o conteúdo principal da página.</p>
+  </main>
+```
+`<footer>`: Define o rodapé da página ou de uma seção. Geralmente contém informações de contato, links de redes sociais e direitos autorais.
+
+```html
+<footer>
+  <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+</footer>
+```
+
+`<section>`: Define uma seção genérica da página. Pode ser usada para agrupar conteúdo relacionado.
+
+```html
+<section>
+  <h3>Seção de Notícias</h3>
+  <p>Confira as últimas notícias sobre tecnologia.</p>
+</section>
+```
+
+`<nav>`: Define um bloco de navegação. Geralmente contém links para outras partes do site.
+
+```html
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Produtos</a></li>
+    <li><a href="#">Contato</a></li>
+  </ul>
+</nav>
+```
+
+`<article>`: Define um conteúdo autônomo e independente, como um post de blog, notícia ou artigo.
+
+```html
+<article>
+  <h2>Novo Produto Lançado</h2>
+  <p>Apresentamos o mais recente produto da nossa empresa.</p>
+</article>
+```
+
+`<aside>`: Define um conteúdo relacionado ou auxiliar, como uma barra lateral de widgets.
+
+```html
+<aside>
+  <h3>Artigos Relacionados</h3>
+  <ul>
+    <li><a href="#">Dicas de Produtividade</a></li>
+    <li><a href="#">Como Usar Nossos Produtos</a></li>
+  </ul>
+</aside>
+``` 
+
+## HTML - Materiais Complementares
+
+Existem vários materiais complementares disponíveis para aprender HTML:
+
+- [W3Schools - HTML Tutorial](https://www.w3schools.com/html/): Um guia abrangente para aprender HTML.
+- [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): Documentação detalhada do HTML pela Mozilla.
 
 # HTML - Elementos estruturais não semânticos 
 
@@ -208,4 +290,33 @@ A tag `<img>` é usada para incluir imagens em uma página. Você deve especific
 ```
 
 O atributo alt fornece uma descrição alternativa para a imagem, o que é importante para acessibilidade e SEO.
+
+
+
+## HTML - Indentação do Código HTML
+
+A indentação do código HTML é uma prática recomendada para melhorar a legibilidade e a organização do seu código. Use espaços ou tabulações para alinhar elementos aninhados de forma clara.
+
+## HTML - Tipos de Link
+
+Existem vários tipos de links em HTML:
+
+### Links para outras páginas:
+
+```html
+<a href="outra_pagina.html">Clique aqui</a>
+```
+### Links para endereços de e-mail:
+
+```html
+<a href="mailto:email@example.com">Enviar e-mail</a>
+``` 
+
+### Links para números de telefone:
+
+```html
+<a href="tel:+123456789">Ligar</a>
+```
+
+
 
