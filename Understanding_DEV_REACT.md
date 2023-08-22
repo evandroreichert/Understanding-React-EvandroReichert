@@ -2,6 +2,8 @@
 
 - [Git e GitHub](#github)
 - [HTML](#html)
+  - [Tipos de Listas](#tipos-de-listas)
+  - [Imagens](#imagens)
 
 <br>
 
@@ -181,4 +183,25 @@ Essas tags são fundamentais para estruturar o conteúdo de uma página e criar 
 - `<mark>`: Texto destacado, geralmente com uma cor de fundo.
 
 Essas tags são usadas para aplicar formatação e ênfase ao texto, ajudando a transmitir informações visuais e semânticas aos leitores.
+
+### Tipos de Listas
+
+Existem diferentes tipos de listas em HTML:
+
+- `<ul>`: Lista não ordenada. Itens são marcados com bullets.
+- `<ol>`: Lista ordenada. Itens são numerados.
+- `<li>`: Item de lista em uma lista `<ul>` ou `<ol>`.
+- `<dl>`: Lista de definição. Cada item tem uma descrição associada.
+
+Além disso, você pode usar a tag `<datalist>` para criar uma lista de opções úteis para formulários ou seções de dúvidas frequentes.
+
+### Imagens
+
+A tag `<img>` é usada para incluir imagens em uma página. Você deve especificar o atributo `src` para indicar o caminho da imagem. Por exemplo:
+
+```html
+<img src="caminho/para/imagem.jpg" alt="Descrição da imagem">
+```
+
+O atributo alt fornece uma descrição alternativa para a imagem, o que é importante para acessibilidade e SEO.
 
