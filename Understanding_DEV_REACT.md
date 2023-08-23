@@ -319,4 +319,164 @@ Existem vários tipos de links em HTML:
 ```
 
 
+## HTML - Tabelas, Vídeo, Áudio, details + summary
+Tabelas:
 
+- Tabelas Simples
+
+```html
+
+<table>
+  <tr>
+    <th>Produto</th>
+    <th>Preço</th>
+  </tr>
+  <tr>
+    <td>Item 1</td>
+    <td>R$ 10</td>
+  </tr>
+</table>
+```
+
+- Tabelas completas
+
+```html
+
+<table>
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Preço</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Item 1</td>
+      <td>R$ 10</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">Total</td>
+    </tr>
+  </tfoot>
+</table>
+```
+
+### CSS Fundamentos
+
+#### Seletores CSS
+  
+Em CSS, os seletores são usados para aplicar estilos a elementos específicos em uma página web. Aqui estão alguns tipos comuns de seletores:
+
+- Elemento Selector: Selecione elementos HTML diretamente. Exemplo: p { ... }
+
+- ID Selector: Selecione um elemento pelo atributo "id". Exemplo: #header { ... }
+
+- Classe Selector: Selecione elementos por sua classe. Exemplo: .destaque { ... }
+
+- Universal Selector: Selecione todos os elementos na página. Exemplo: * { ... }
+
+#### Sintaxe CSS e Onde Declarar
+
+A sintaxe básica de uma regra CSS consiste em um seletor seguido por um bloco de declarações. As declarações são compostas por uma propriedade e um valor. Aqui está um exemplo:
+
+```css
+seletor {
+    propriedade: valor;
+}
+```
+
+Você pode declarar estilos CSS dentro de uma tag `<style>` no cabeçalho do documento HTML ou em um arquivo externo com a extensão .css e vinculá-lo ao HTML.
+
+#### Comentários em CSS
+
+Os comentários em CSS são usados para adicionar notas ou explicar o código. Eles não afetam o estilo da página. Comentários de uma linha começam com //, enquanto comentários de várias linhas são envolvidos por /* ... */.
+
+```css
+/* Isto é um comentário de várias linhas
+   que explica o propósito deste estilo. */
+
+
+// Este é um comentário de uma linha.
+``` 
+
+#### Propriedades de CSS: Background e Color
+
+- Background: A propriedade background é usada para definir a cor de fundo de um elemento, além de imagens de fundo e outras configurações relacionadas.
+
+```css
+elemento {
+    background-color: cor;
+    background-image: url('imagem.jpg');
+    /* Outras propriedades de background */
+}
+```
+
+- Color: A propriedade color define a cor do texto dentro de um elemento.
+
+```css
+elemento {
+    color: cor;
+}
+```
+
+#### Formatação de Texto e Fontes
+
+Para formatar texto e fontes, você pode usar propriedades como `font-family`, `font-size`, `font-weight`, `text-align` e mais.
+
+```css
+texto {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    /* Outras propriedades de formatação */
+}
+```
+
+#### Elementos Block-level vs. Inline
+
+- Elementos Block-level: Esses elementos ocupam toda a largura disponível e começam em uma nova linha, como `<div>`, `<p>`, `<h1>`, `<ul>`, etc.
+
+- Elementos Inline: Esses elementos ocupam apenas o espaço necessário e não forçam uma nova linha, como `<span>`, `<a>`, `<strong>`, etc.
+
+Lembre-se de que a escolha entre esses elementos afeta o layout e o comportamento da página.
+
+
+#### Elementos `<details>` e `<summary>`
+
+O elemento HTML `<details>` é usado para criar um bloco de informações que pode ser expandido ou recolhido pelo usuário. O texto dentro do elemento `<summary>` é usado como o cabeçalho para controlar a exibição do conteúdo oculto.
+
+```html
+<details>
+  <summary>Clique para mostrar mais informações</summary>
+  <p>Aqui está o conteúdo adicional que pode ser expandido ou recolhido.</p>
+</details>
+```
+
+##### Exemplo 1: FAQ Interativo
+
+```html
+<details>
+  <summary>O que é HTML?</summary>
+  <p>HTML (HyperText Markup Language) é uma linguagem de marcação usada para estruturar o conteúdo em páginas da web.</p>
+</details>
+
+<details>
+  <summary>O que é CSS?</summary>
+  <p>CSS (Cascading Style Sheets) é uma linguagem usada para estilizar a apresentação das páginas da web, incluindo layout, cores e fontes.</p>
+</details>
+```
+
+##### Exemplo 2: Instruções de Uso
+
+```html
+<details>
+  <summary>Como usar nosso serviço?</summary>
+  <p>Passo 1: Faça o registro em nosso site.</p>
+  <p>Passo 2: Selecione o produto desejado em nossa loja online.</p>
+  <p>Passo 3: Adicione o produto ao carrinho e finalize a compra.</p>
+  <p>Passo 4: Aguarde a entrega em sua casa!</p>
+</details>
+```
