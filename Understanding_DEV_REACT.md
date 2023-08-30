@@ -480,3 +480,69 @@ O elemento HTML `<details>` é usado para criar um bloco de informações que po
   <p>Passo 4: Aguarde a entrega em sua casa!</p>
 </details>
 ```
+
+# CSS - Cores
+
+Você pode definir cores usando nomes de cores, valores hexadecimais ou valores RGB. Exemplos:
+
+```css
+p {
+  color: red; /* Nome da cor */
+  background-color: #00ff00; /* Valor hexadecimal */
+  border: 1px solid rgb(255, 0, 0); /* Valor RGB */
+}
+```
+
+## CSS - Margens, Padding, Bordas, Outline, Box Model
+- Margens: Espaçamento externo de um elemento.
+- Padding: Espaçamento interno de um elemento.
+- Bordas: Linhas ao redor de um elemento.
+- Outline: Contorno ao redor de um elemento.
+- Box Model: Modelo de caixa que inclui conteúdo, padding, border e margin.
+  Exemplo:
+
+```css
+Copy code
+div {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid black;
+  outline: 2px solid blue;
+}
+```
+
+## CSS - Formatação para Links, Listas e Tabelas
+- Formatação de Links:
+
+```css
+a {
+  color: blue;
+  text-decoration: none; /* Remove sublinhado */
+}
+```
+
+- Formatação de Listas:
+
+```css
+ul {
+  list-style-type: circle; /* Tipo de marcador */
+  margin-left: 20px; /* Espaçamento à esquerda */
+}
+```
+
+- Formatação de Tabelas:
+```css
+table {
+  border-collapse: collapse; /* Colapsar bordas de células */
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+```
+
+## Conteúdos Complementares
+
+- [Curso de HTML e CSS - Aula 12 - Cores em CSS](https://www.youtube.com/watch?v=9tbJXOypsjI)
+- [Curso de HTML e CSS - Aula 13 - Fontes em CSS](https://www.youtube.com/watch?v=nV9lD_VWoOY)
