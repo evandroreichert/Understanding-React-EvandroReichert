@@ -548,5 +548,5 @@ th, td {
 
 ## Conteúdos Complementares
 
-- [Curso de HTML e CSS - Aula 12 - Cores em CSS](https://www.youtube.com/watch?v=9tbJXOypsjI)
-- [Curso de HTML e CSS - Aula 13 - Fontes em CSS](https://www.youtube.com/watch?v=nV9lD_VWoOY)
+- [Curso de HTML e CSS - Aula 12 - Cores em CSS](https://www.youtube.com/watch?v=uKjKnztS3cY&pp=ygUbQ29yZXMgZW0gQ1NTIGN1cnNvIGVtIHZpZGVv)
+- [Curso de HTML e CSS - Aula 13 - Fontes em CSS](https://www.youtube.com/watch?v=FLuQonci9wU&pp=ygUcZm9udGVzIGVtIENTUyBjdXJzbyBlbSB2aWRlbw%3D%3D)
