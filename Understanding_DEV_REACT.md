@@ -506,7 +506,6 @@ p {
   Exemplo:
 
 ```css
-Copy code
 div {
   margin: 10px;
   padding: 20px;
