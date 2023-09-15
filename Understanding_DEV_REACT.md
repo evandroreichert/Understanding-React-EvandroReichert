@@ -4,10 +4,17 @@
 - [HTML](#html)
   - [Tipos de Listas](#tipos-de-listas)
   - [Imagens](#imagens)
+  - [Tabelas, Vídeo, Áudio, details + summary](#tabelas)
 - [CSS](#css-fundamentos)
-  - [CSS - Margens, Padding, Bordas, Outline, Box Model](#css---margens-padding-bordas-outline-box-model)
-  - [CSS - Formatação para Links, Listas e Tabelas](#css---formatação-para-links-listas-e-tabelas)
+  - [Margens, Padding, Bordas, Outline, Box Model](#css---margens-padding-bordas-outline-box-model)
+  - [Formatação para Links, Listas e Tabelas](#css---formatação-para-links-listas-e-tabelas)
+  - [FlexBox](#flex)
+  - [Grid Layout](#grid)
+  - [Responsividade](#mediaquery)
   - [Referências](#conteúdos-complementares)
+- [JavaScript](#javascript)
+  - [Variáveis](#variaveis)
+  - [Condicionais](#condicionais)
 
 <br>
 
@@ -322,8 +329,8 @@ Existem vários tipos de links em HTML:
 <a href="tel:+123456789">Ligar</a>
 ```
 
-
-## HTML - Tabelas, Vídeo, Áudio, details + summary
+<a id="tabelas"> </a>
+## HTML - Tabelas, Vídeo, Áudio, details + summary 
 Tabelas:
 
 - Tabelas Simples
@@ -365,6 +372,22 @@ Tabelas:
     </tr>
   </tfoot>
 </table>
+```
+
+# HTML - Formulários
+
+Os formulários HTML permitem que os usuários insiram dados interativamente. Aqui está um exemplo básico de um formulário:
+
+```html
+<form>
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Digite seu email">
+  
+  <input type="submit" value="Enviar">
+</form>
 ```
 
 ### CSS Fundamentos 
@@ -506,6 +529,7 @@ p {
   Exemplo:
 
 ```css
+Copy code
 div {
   margin: 10px;
   padding: 20px;
@@ -549,3 +573,185 @@ th, td {
 
 - [Curso de HTML e CSS - Aula 12 - Cores em CSS](https://www.youtube.com/watch?v=uKjKnztS3cY&pp=ygUbQ29yZXMgZW0gQ1NTIGN1cnNvIGVtIHZpZGVv)
 - [Curso de HTML e CSS - Aula 13 - Fontes em CSS](https://www.youtube.com/watch?v=FLuQonci9wU&pp=ygUcZm9udGVzIGVtIENTUyBjdXJzbyBlbSB2aWRlbw%3D%3D)
+
+<a id="listas"></a>
+
+# CSS - Formatação para Listas e Tabelas
+
+## Formatação de Listas
+
+Você pode personalizar a aparência de listas em CSS. Aqui estão alguns exemplos:
+
+```css
+/* Alterando o tipo de marcador e espaçamento */
+ul {
+  list-style-type: square; /* Tipo de marcador */
+  margin-left: 20px; /* Espaçamento à esquerda */
+}
+```
+
+## Formatação de Tabelas
+
+Você pode estilizar tabelas em CSS. Aqui está um exemplo:
+
+```css
+/* Estilizando células da tabela */
+table {
+  border-collapse: collapse; /* Colapsar bordas de células */
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+```
+<a id="flex"></a>
+# Flexbox
+O Flexbox é um modelo de layout que facilita o design de layouts flexíveis e responsivos em CSS. Aqui está um exemplo de uso básico:
+
+```css
+/* Usando Flexbox para alinhar itens horizontalmente */
+.container {
+  display: flex;
+  justify-content: center; /* Alinhar itens no centro horizontalmente */
+  align-items: center; /* Alinhar itens no centro verticalmente */
+}
+``` 
+<a id="grid"></a>
+# Grid Layout
+O Grid Layout é outro modelo de layout que permite criar layouts complexos de maneira eficiente. Aqui está um exemplo de uso:
+
+```css
+/* Criando uma grade de layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Define 3 colunas */
+  grid-gap: 10px; /* Espaçamento entre células */
+}
+```
+
+<a id="mediaquery"></a>
+# CSS - Responsividade (Media Query, viewport)
+Para criar designs responsivos em CSS, você pode usar media queries e a unidade de medida `vw` (viewport width). Exemplos:
+
+```css
+/* Media query para telas menores que 600px */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px; /* Reduzir o tamanho da fonte */
+  }
+}
+
+/* Usando vw para ajustar o tamanho com base na largura da tela */
+header {
+  font-size: 4vw; /* Tamanho de fonte responsivo */
+  padding: 2vw; /* Preenchimento responsivo */
+}
+```
+<a id="javascript"></a>
+# Javascript
+
+<a id="variaveis"></a>
+## JavaScript - Variáveis
+Em JavaScript, as variáveis são usadas para armazenar dados. Elas podem ser comparadas a "caixas" em que você pode colocar informações. Aqui estão os principais tipos de variáveis em JavaScript:
+
+### Variáveis com var
+
+Antes do ES6 (ECMAScript 2015), a maneira mais comum de declarar variáveis em JavaScript era usando a palavra-chave var. No entanto, o uso de var é menos preferível em comparação com let e const, devido ao seu escopo de função. Aqui está um exemplo:
+
+```javascript
+var nome = "Evandro";
+```
+
+### Variáveis com let
+A palavra-chave let é usada para declarar variáveis que têm escopo de bloco. Isso significa que elas só estão acessíveis dentro do bloco em que foram declaradas. Exemplo:
+
+```javascript
+let idade = 20;
+```
+
+### Variáveis com const
+A palavra-chave const é usada para declarar variáveis constantes, ou seja, variáveis cujo valor não pode ser alterado após a atribuição inicial. Exemplo:
+
+```javascript
+const pi = 3.14159;
+```
+
+### Tipos de Dados
+JavaScript possui diversos tipos de dados, incluindo números, strings, booleanos, arrays, objetos, entre outros.
+
+```javascript
+let numero = 42; // Número inteiro
+let texto = "Olá, Mundo!"; // String
+let estaChovendo = true; // Booleano
+let frutas = ["maçã", "banana", "laranja"]; // Array
+let pessoa = { nome: "Evandro", idade: 20 }; // Objeto
+```
+
+<a id="condicionais"></a>
+## Condicionais
+
+As estruturas condicionais permitem que você tome decisões em seu código, com base em condições especificadas. Em JavaScript, você pode usar as estruturas `if`, `else if` e `else` para criar condicionais.
+
+Estrutura `if`
+A estrutura `if` permite que você execute um bloco de código se uma condição for verdadeira. Veja um exemplo:
+
+```javascript
+let idade = 18;
+
+if (idade >= 18) {
+  console.log("Você é maior de idade.");
+}
+```
+
+Estrutura `else` e `else if`
+Você pode usar `else` para especificar um bloco de código que será executado se a condição do `if` for falsa. Você também pode usar `else if` para verificar múltiplas condições. Exemplo:
+
+```javascript
+let hora = 14;
+
+if (hora < 12) {
+  console.log("Bom dia!");
+} else if (hora < 18) {
+  console.log("Boa tarde!");
+} else {
+  console.log("Boa noite!");
+}
+```
+
+Operadores de Comparação
+JavaScript possui diversos operadores de comparação, incluindo `==`, `!=`, `<`, `>`, `<=` e `>=`. Eles são usados para comparar valores. Exemplo:
+
+```javascript
+let numero = 42;
+
+if (numero == 42) {
+  console.log("O número é igual a 42.");
+}
+```
+
+## Exemplos Completos
+Aqui estão exemplos completos que mostram como usar variáveis e condicionais em JavaScript:
+
+```javascript
+// Exemplo 1: Usando variáveis
+let nome = "Alice";
+let idade = 25;
+let estaChovendo = false;
+
+// Exemplo 2: Estrutura condicional if
+if (idade >= 18) {
+  console.log(nome + " é maior de idade.");
+} else {
+  console.log(nome + " é menor de idade.");
+}
+
+// Exemplo 3: Estrutura condicional else if
+if (estaChovendo) {
+  console.log("É melhor levar um guarda-chuva.");
+} else if (idade >= 18) {
+  console.log("Pode sair sem guarda-chuva.");
+} else {
+  console.log("É melhor ficar em casa.");
+}
+```
