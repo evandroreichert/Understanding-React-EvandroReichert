@@ -14,7 +14,11 @@
   - [Referências](#conteúdos-complementares)
 - [JavaScript](#javascript)
   - [Variáveis](#variaveis)
-  - [Condicionais](#condicionais)
+  - [Estruturas de Seleção](#condicionais)
+  - [Estruturas de Repetição](#repeticao)
+  - [Arrays](#arrays)
+  - [Funções](#funcoes)
+  - [Tratamento de Eventos](#eventos)
 
 <br>
 
@@ -719,7 +723,7 @@ if (hora < 12) {
 }
 ```
 
-Operadores de Comparação
+## Operadores de Comparação
 JavaScript possui diversos operadores de comparação, incluindo `==`, `!=`, `<`, `>`, `<=` e `>=`. Eles são usados para comparar valores. Exemplo:
 
 ```javascript
@@ -755,3 +759,420 @@ if (estaChovendo) {
   console.log("É melhor ficar em casa.");
 }
 ```
+
+## Operadores de Lógicos
+
+Além dos operadores de comparação, JavaScript também oferece operadores lógicos para combinar condições. Os principais operadores lógicos são:
+
+`&&` (E lógico): Retorna verdadeiro se ambas as condições forem verdadeiras.
+
+`||` (OU lógico): Retorna verdadeiro se pelo menos uma das condições for verdadeira.
+
+`!` (NÃO lógico): Inverte o valor de verdadeiro para falso e vice-versa.
+
+### Estruturas de Controle
+
+Estrutura `switch`
+
+A estrutura `switch` é usada para verificar o valor de uma expressão e executar um bloco de código correspondente ao valor. É uma alternativa mais limpa e eficiente do que uma série de `if...else if...else`.
+
+```javascript
+let diaDaSemana = "quarta";
+
+switch (diaDaSemana) {
+  case "segunda":
+    console.log("É segunda-feira.");
+    break;
+  case "quarta":
+    console.log("É quarta-feira.");
+    break;
+  default:
+    console.log("Outro dia da semana.");
+}
+```
+
+**Operador Ternário**
+
+O operador ternário é uma forma concisa de criar condicionais em uma única linha. Ele é frequentemente usado para atribuir valores com base em uma condição.
+
+```javascript
+let temperatura = 25;
+let clima = temperatura > 30 ? "Quente" : "Frio";
+console.log("O clima é " + clima);
+```
+<a id="repeticao"></a>
+# JavaScript - Estruturas de Repetição
+
+## Loop `for`
+
+O loop `for` é usado quando você sabe antecipadamente quantas vezes deseja executar um bloco de código. É composto por três partes: inicialização, condição e iteração.
+
+Exemplo:
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log("Número: " + i);
+}
+```
+## Loop `while`
+O loop `while` é usado quando você deseja que um bloco de código seja executado enquanto uma condição seja verdadeira.
+
+Exemplo:
+
+```javascript
+
+let contador = 0;
+while (contador < 5) {
+  console.log("Contador: " + contador);
+  contador++;
+}
+```
+Loop `do...while`
+O loop `do...while` é semelhante ao `while`, mas garante que o bloco de código seja executado pelo menos uma vez, mesmo se a condição for falsa.
+
+Exemplo:
+
+```javascript
+let x = 0;
+do {
+  console.log("Número x: " + x);
+  x++;
+} while (x < 3);
+```
+
+## Estruturas de Repetição Avançadas
+Loop `for...of`
+O loop `for...of` é usado para iterar sobre elementos iteráveis, como arrays e strings.
+
+Exemplo:
+
+```javascript
+let frutas = ["maçã", "banana", "laranja"];
+for (let fruta of frutas) {
+  console.log(fruta);
+}
+```
+
+Loop `for...in`
+O loop for...in é usado para iterar sobre as propriedades de um objeto.
+
+Exemplo:
+
+```javascript
+let pessoa = { nome: "João", idade: 30, cidade: "São Paulo" };
+for (let propriedade in pessoa) {
+  console.log(propriedade + ": " + pessoa[propriedade]);
+}
+```
+
+## Prática com Estruturas de Repetição
+
+Exemplo 1: Soma de Números
+
+```javascript
+let soma = 0;
+
+for (let i = 1; i <= 5; i++) {
+  soma += i;
+}
+
+console.log("A soma dos números de 1 a 5 é: " + soma);
+```
+
+Exemplo 2: Encontrar Elemento em um Array
+
+```javascript
+let numeros = [10, 20, 30, 40, 50];
+let alvo = 30;
+
+let encontrado = false;
+
+for (let numero of numeros) {
+  if (numero === alvo) {
+    encontrado = true;
+    break;
+  }
+}
+
+if (encontrado) {
+  console.log("Elemento encontrado!");
+} else {
+  console.log("Elemento não encontrado.");
+}
+```
+
+Exemplo 3: Iterar sobre Propriedades de um Objeto
+
+```javascript
+let carro = { marca: "Toyota", modelo: "Corolla", ano: 2020 };
+
+for (let propriedade in carro) {
+  console.log(propriedade + ": " + carro[propriedade]);
+}
+```
+<a id="arrays"></a>
+# Arrays em JavaScript
+Um array é uma estrutura de dados que pode armazenar múltiplos valores. Em JavaScript, os arrays são usados para armazenar uma coleção ordenada de elementos, que podem ser de diferentes tipos, como números, strings, objetos, funções, etc.
+
+**Criando um Array**
+Em JavaScript, você pode criar um array de várias maneiras:
+
+1. Array Literal:
+```javascript
+let frutas = ["Maçã", "Banana", "Laranja"];
+```
+
+2. Construtor Array:
+```javascript
+let frutas = new Array("Maçã", "Banana", "Laranja");
+```
+
+**Acessando Elementos do Array**
+
+Os elementos de um array podem ser acessados pelo seu índice. Os índices em JavaScript começam em 0, ou seja, o primeiro elemento tem índice 0, o segundo tem índice 1 e assim por diante:
+
+```javascript
+let frutas = ["Maçã", "Banana", "Laranja"];
+console.log(frutas[0]); // Acessa o primeiro elemento (Maçã)
+console.log(frutas[1]); // Acessa o segundo elemento (Banana)
+```
+
+### Propriedades e Métodos de Arrays
+Arrays em JavaScript têm várias propriedades e métodos úteis, como:
+
+`length`: Propriedade que retorna o número de elementos em um array.
+
+```javascript
+let frutas = ["Maçã", "Banana", "Laranja"];
+console.log(frutas.length); // Retorna 3
+```
+
+`push()`: Método que adiciona um elemento ao final do array.
+
+```javascript
+frutas.push("Pera");
+```
+
+`pop()`: Método que remove o último elemento do array.
+
+```javascript
+let ultimaFruta = frutas.pop(); // Remove "Pera" e a armazena em ultimaFruta
+```
+
+`unshift()`: Método que adiciona um elemento no início do array.
+
+```javascript
+frutas.unshift("Manga");
+```
+
+`shift()`: Método que remove o primeiro elemento do array.
+
+```javascript
+let primeiraFruta = frutas.shift(); // Remove "Manga" e a armazena em primeiraFruta
+```
+
+**Iteração em Arrays**
+
+Para percorrer os elementos de um array, você pode usar loops como `for`, `for...of` ou métodos específicos de array como `forEach()`:
+
+- Usando `for`:
+
+```javascript
+for (let i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}
+```
+
+- Usando `for...of`:
+
+```javascript
+for (let fruta of frutas) {
+  console.log(fruta);
+}
+```
+
+- Usando `forEach()`:
+
+```javascript
+frutas.forEach(function(fruta) {
+  console.log(fruta);
+});
+```
+
+**Manipulação de Arrays**
+
+Você pode fazer várias operações em arrays, como adicionar, remover, pesquisar elementos e muito mais. Alguns exemplos:
+
+- Adicionar Elementos: 
+
+```javascript
+frutas.push("Pera"); // Adiciona ao final
+frutas.unshift("Manga"); // Adiciona no início
+```
+
+- Remover Elementos:
+
+```javascript
+frutas.pop(); // Remove o último elemento
+frutas.shift(); // Remove o primeiro elemento
+```
+
+- Pesquisar Elementos:
+
+```javascript
+let indice = frutas.indexOf("Banana"); // Retorna o índice de "Banana"
+```
+
+- Fatiar um Array:
+
+```javascript
+let citricas = frutas.slice(1, 3); // Retorna ["Banana", "Laranja"]
+```
+
+# Notas Importantes
+- Os arrays em JavaScript são dinâmicos, o que significa que você pode alterar seu tamanho a qualquer momento, adicionando ou removendo elementos.
+
+- Os elementos de um array não precisam ser do mesmo tipo.
+
+- Os índices negativos contam a partir do final do array. Por exemplo, -1 representa o último elemento, -2 o penúltimo e assim por diante.
+
+- Arrays podem ser utilizados para implementar pilhas (usando push e pop) e filas (usando push e shift), além de várias outras estruturas de dados.
+
+- Use o método Array.isArray(arr) para verificar se uma variável é um array.
+
+- Arrays são uma parte fundamental da programação em JavaScript e são amplamente utilizados para armazenar, manipular e processar dados em muitos tipos de aplicativos.
+
+
+<a id="funcoes"></a>
+# Funções
+
+As funções são blocos de código reutilizáveis que podem ser definidos e chamados em JavaScript. Elas desempenham um papel fundamental na modularização do código e permitem que você execute ações específicas de maneira organizada. Aqui está uma explicação abrangente sobre funções em JavaScript:
+
+Definindo Funções
+Em JavaScript, você pode definir funções de várias maneiras. A forma mais comum é usando a declaração de função:
+
+```javascript
+function saudacao() {
+  console.log("Olá, Entra21!");
+}
+```
+
+Também é possível definir funções anônimas e atribuí-las a variáveis:
+
+```javascript
+const saudacao = function() {
+  console.log("Olá, E21!");
+};
+```
+
+**Chamando Funções**
+
+Após definir uma função, você pode chamá-la para executar o código dentro dela:
+
+```javascript
+saudacao(); // Chama a função e exibe "Olá, E21!" no console.
+```
+
+**Parâmetros e Retorno** 
+
+Funções podem receber parâmetros e retornar valores:
+
+```javascript
+function somar(a, b) {
+  return a + b;
+}
+
+let resultado = somar(3, 5); // A variável 'resultado' conterá 8.
+```
+
+**Escopo de Função**
+
+Variáveis declaradas dentro de funções são locais ao escopo da função. Isso significa que elas não são acessíveis fora da função.
+
+```javascript
+function exemplo() {
+  let dentroDaFuncao = "Esta variável está visível apenas dentro da função.";
+}
+console.log(dentroDaFuncao); // Isso resultará em um erro.
+```
+
+**Arrow Functions**
+
+As Arrow Functions são uma sintaxe mais curta para definir funções:
+
+```javascript
+const saudacao = () => {
+  console.log("Olá, E21!");
+};
+```
+
+**Funções Callback**
+
+Funções podem ser passadas como argumentos para outras funções. Isso é comum em JavaScript, especialmente ao lidar com assincronia. Essas funções são chamadas funções de callback.
+
+```javascript
+function fazerAlgo(callback) {
+  // Realize alguma operação
+  callback();
+}
+
+fazerAlgo(function() {
+  console.log("Feito!");
+});
+```
+
+<a id="eventos"></a>
+## Tratamento de Eventos em JavaScript
+
+O tratamento de eventos é fundamental em desenvolvimento web, permitindo que você responda a ações do usuário, como cliques, pressionamentos de tecla, movimentos do mouse, etc. Aqui está uma introdução ao tratamento de eventos em JavaScript:
+
+**Adicionando Event Listeners**
+
+Você pode usar o método `addEventListener` para atribuir eventos a elementos HTML:
+
+```javascript
+const botao = document.getElementById("botao");
+
+meuBotao.addEventListener("click", function() {
+  console.log("O botão foi clicado!");
+});
+```
+
+**Tipos de Eventos Comuns**
+
+- `click`: Disparado quando um elemento é clicado.
+- `mouseover`: Disparado quando o cursor do mouse entra em um elemento.
+- `mouseout`: Disparado quando o cursor do mouse sai de um elemento.
+- `keydown`: Disparado quando uma tecla é pressionada.
+- `submit`: Disparado quando um formulário é enviado.
+
+**Removendo Event Listeners**
+
+Para remover um evento, use `removeEventListener` com a mesma função de callback:
+
+```javascript
+meuBotao.removeEventListener("click", minhaFuncao);
+```
+
+**Objeto de Evento**
+
+Quando um evento é acionado, um objeto de evento é passado para a função do manipulador de eventos, contendo informações sobre o evento, como o alvo, tipo de evento e muito mais.
+
+```javascript
+meuBotao.addEventListener("click", function(event) {
+  console.log("Tipo de evento: " + event.type);
+});
+```
+
+**Prevenindo Comportamentos Padrão**
+
+Você pode usar `event.preventDefault()` para evitar que o comportamento padrão de um evento aconteça. Isso é útil, por exemplo, para impedir que um formulário seja enviado.
+
+```javascript
+const meuFormulario = document.getElementById("formulario");
+
+meuFormulario.addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita o envio do formulário.
+});
+```
+
