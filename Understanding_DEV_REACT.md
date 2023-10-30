@@ -11,7 +11,8 @@
   - [FlexBox](#flex)
   - [Grid Layout](#grid)
   - [Responsividade](#mediaquery)
-  - [Referências](#conteúdos-complementares)
+  - [Referências](#conteúdos-complementares) 
+  - [Bootstrap](#bootstrap)
 - [JavaScript](#javascript)
   - [Variáveis](#variaveis)
   - [Estruturas de Seleção](#condicionais)
@@ -19,6 +20,10 @@
   - [Arrays](#arrays)
   - [Funções](#funcoes)
   - [Tratamento de Eventos](#eventos)
+  - [Diferenças var x let x const](#var-let-const)
+  - [Métodos map, reduce e filter](#map-reduce-filter)
+  - [Arrays multidimensionais (matrizes)](#matrizes)
+  - [Métodos de Numbers](#metodos-numbers)
 
 <br>
 
@@ -652,6 +657,21 @@ header {
   padding: 2vw; /* Preenchimento responsivo */
 }
 ```
+<a id="bootstrap"></a>
+# CSS - Bootstrap
+
+Bootstrap é um popular framework front-end de código aberto que simplifica o desenvolvimento web. Ele fornece uma coleção de estilos, componentes e ferramentas que tornam a criação de sites e aplicativos web responsivos mais eficiente. Aqui estão algumas informações importantes sobre Bootstrap:
+
+- **O que é Bootstrap**: Bootstrap é uma biblioteca de código aberto que fornece um conjunto de estilos e componentes prontos para uso.
+
+- **Como Funciona:** Bootstrap fornece classes CSS predefinidas que podem ser aplicadas a elementos HTML, o que permite criar um layout responsivo e atraente.
+
+- **Instalação:** Você pode incluir o Bootstrap em seu projeto por meio de um arquivo CSS e um arquivo JavaScript. Existem várias maneiras de fazer isso, incluindo o download direto dos arquivos ou o uso de CDNs (Content Delivery Networks).
+
+- **Layout:** Bootstrap oferece um sistema de grade flexível que permite criar layouts responsivos com facilidade. Você pode usar classes como container, row e col para organizar o conteúdo da página.
+
+Bootstrap é uma ferramenta valiosa para desenvolvedores front-end, pois acelera o processo de desenvolvimento e ajuda a manter a consistência e a qualidade visual de seus projetos web.
+
 <a id="javascript"></a>
 # Javascript
 
@@ -1176,3 +1196,62 @@ meuFormulario.addEventListener("submit", function(event) {
 });
 ```
 
+<a id="var-let-const"></a>
+# As diferenças entre var x let x const
+
+`var`, `let`, e `const`
+Em JavaScript, existem três palavras-chave para declarar variáveis: `var`, `let` e `const`. Cada uma delas se comporta de forma ligeiramente diferente em relação ao escopo e à capacidade de reatribuição:
+
+`var`: É uma palavra-chave mais antiga e possui escopo de função, o que significa que a variável declarada com `var` fica visível em toda a função em que foi declarada. Além disso, `var` permite a reatribuição.
+
+`let`: Introduzido no ECMAScript 6 (ES6), `let` tem escopo de bloco, o que significa que a variável está visível apenas dentro do bloco em que foi declarada. Ela também pode ser reatribuída.
+
+`const`: Também introduzido no ES6, `const` tem escopo de bloco, mas a diferença crucial é que as variáveis declaradas com `const` não podem ser reatribuídas após a sua inicialização. No entanto, elas ainda podem ser mutadas (se forem objetos ou arrays).
+
+
+<a id="map-reduce-filter"></a>
+# Métodos map, reduce, filter
+
+Em JavaScript, arrays têm métodos úteis que podem simplificar o processo de manipulação de dados. Aqui estão alguns dos métodos mais comuns:
+
+`map`: O método `map` é usado para criar um novo array com base no array original, aplicando uma função a cada elemento e retornando os resultados em um novo array.
+
+`reduce`: O método `reduce` é usado para reduzir um array a um único valor. Ele executa uma função para cada elemento do array, acumulando um valor à medida que percorre o array.
+
+`filter`: O método `filter` é usado para criar um novo array com todos os elementos que passam em um teste especificado em uma função.
+
+<a id="matrizes"></a>
+# Arrays Multidimensionais
+Arrays multidimensionais são arrays que contêm outros arrays como elementos. Isso permite criar estruturas de dados complexas, como matrizes e tabelas. Cada dimensão é acessada aninhando colchetes adicionais:
+
+```javascript
+const matriz = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+console.log(matriz[1][2]); // Acessa o elemento 6 na segunda linha, terceira coluna.
+```
+
+<a id="metodos-numbers"></a>
+# Métodos de Numbers
+
+O tipo de dado `Number` em JavaScript possui métodos que permitem executar operações matemáticas e formatar números. Alguns métodos comuns incluem:
+
+`toFixed`: Usado para especificar o número de casas decimais que um número terá.
+
+`parseInt` e `parseFloat`: São usados para converter uma string em um número inteiro ou decimal, respectivamente.
+
+`toExponential` e `toPrecision`: São usados para formatar números em notação exponencial ou com precisão específica.
+
+## Precedência de Operadores Aritméticos
+
+A precedência de operadores aritméticos determina a ordem em que as operações matemáticas são executadas em uma expressão. Em JavaScript, a precedência segue uma hierarquia padrão, com multiplicação e divisão tendo precedência sobre adição e subtração. Parênteses podem ser usados para forçar a ordem desejada.
+
+## Precedência de Operadores Lógicos
+A precedência de operadores lógicos determina a ordem em que operações lógicas são avaliadas. Em JavaScript, os operadores lógicos têm precedência, com o "E lógico" (`&&`) tendo uma precedência mais alta que o "OU lógico" (`||`).
+
+## Avaliação de Curto-Circuito
+
+A avaliação de curto-circuito é um conceito fundamental em JavaScript, usado em operações lógicas. Ela permite que você interrompa a avaliação de uma expressão lógica assim que o resultado for determinado. Por exemplo, no caso do operador `&&`, se o primeiro operando for `false`, o segundo operando não será avaliado.
