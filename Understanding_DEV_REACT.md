@@ -1,3 +1,5 @@
+![banner](assets/UNDESTANDING.png)
+
 # Tabela de Conteúdos
 
 - [Git e GitHub](#github)
@@ -41,6 +43,7 @@
 <br>
 
 # GIT E GITHUB <a id="github"></a>
+![Alt text](/assets/github.png)
 
 ## 1. Criar repositório no GitHub
 
@@ -128,6 +131,8 @@ _Documentação:_ [Git Stash](https://git-scm.com/docs/git-stash)
 <a id="html"></a>
 
 # HTML - Introdução
+
+![Alt text](/assets/html.png)
 
 ## O que é HTML?
 
@@ -423,6 +428,8 @@ Os formulários HTML permitem que os usuários insiram dados interativamente. Aq
 
 ### CSS Fundamentos
 
+![Alt text](/assets/css.png)
+
 #### Seletores CSS
 
 Em CSS, os seletores são usados para aplicar estilos a elementos específicos em uma página web. Aqui estão alguns tipos comuns de seletores:
@@ -715,6 +722,8 @@ Bootstrap é uma ferramenta valiosa para desenvolvedores front-end, pois acelera
 <a id="javascript"></a>
 
 # Javascript
+
+![Alt text](/assets/js.png)
 
 <a id="variaveis"></a>
 
@@ -1423,6 +1432,8 @@ Esses mecanismos permitem armazenar dados no navegador do cliente.
 
 # Node.js
 
+![Alt text](/assets/node.png)
+
 <a id="criando-o-primeiro-servidor-http"></a>
 
 ## Criando o primeiro servidor HTTP
@@ -1566,6 +1577,8 @@ Middlewares são funções que têm acesso ao objeto de solicitação (request),
 
 ### Conceitos Básicos de API REST
 
+![Alt text](/assets/api-rest.png)
+
 API REST (Representational State Transfer) é um estilo de arquitetura que define um conjunto de regras para criar serviços web.
 
 Recursos:
@@ -1588,6 +1601,8 @@ Códigos de status HTTP indicam o resultado da solicitação. Alguns exemplos s�
 - 200 OK: Solicitação bem-sucedida.
 - 404 Not Found: Recurso não encontrado.
 - 500 Internal Server Error: Erro interno do servidor.
+
+![Alt text](/assets/status-codes.png)
 
 <a id="arquivos-estáticos"></a>
 
